@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Stoic Fortress | 7 Laws of Psychological Defense</title>
+  <meta name="description" content="Master emotional self-defense, conquer dark psychology, and build an impenetrable mind with ancient Stoic wisdom. Official publication by Stoic Shadow.">
+  <meta property="og:title" content="The Stoic Fortress: 7 Laws of Psychological Defense">
+  <meta property="og:description" content="An unmanipulable mind is the ultimate form of power. Master your emotions and decode human nature.">
+  <meta property="og:type" content="book">
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#09090b',
+            surface: '#121215',
+            card: '#18181c',
+            gold: {
+              300: '#fde047',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            stone: {
+              300: '#d6d3d1',
+              400: '#a8a29e',
+              500: '#78716c',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar & Glow */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d97706;
+    }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .gold-border-glow {
+      box-shadow: 0 0 25px -5px rgba(217, 119, 6, 0.15);
+      border: 1px solid rgba(217, 119, 6, 0.25);
+    }
+
+    .reading-progress-bar {
+      width: 0%;
+      height: 3px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background: linear-gradient(90deg, #d97706, #fbbf24);
+      transition: width 0.1s ease-out;
+    }
+  </style>
+</head>
+
+<body class="bg-obsidian text-stone-300 font-sans antialiased selection:bg-gold-500/30 selection:text-gold-300 min-h-screen">
+
+  <!-- Reading Progress Bar -->
+  <div id="progressBar" class="reading-progress-bar"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-obsidian/80 backdrop-blur-md border-b border-white/5 transition-all">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold-500 to-amber-700 flex items-center justify-center text-obsidian font-serif font-bold text-lg shadow-lg shadow-amber-500/20">
+          🏛️
+        </div>
+        <span class="font-serif tracking-widest text-lg font-bold text-white group-hover:text-gold-400 transition-colors">
+          STOIC SHADOW
+        </span>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="#protocol" class="text-xs uppercase tracking-wider font-semibold text-stone-400 hover:text-gold-400 transition-colors hidden sm:inline-block">
+          Morning Protocol
+        </a>
+        <a href="#laws" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-gold-600 hover:bg-gold-500 text-obsidian transition-all duration-200 shadow-md shadow-gold-600/20 hover:scale-105 active:scale-95">
+          Read The 7 Laws
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-36 pb-20 px-6 overflow-hidden">
+    <!-- Ambient Background Light -->
+    <div class="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-3xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-400 text-xs font-medium tracking-widest uppercase mb-6">
+        <span>⚔️</span> Psychological Defense Manual
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
+        THE STOIC <span class="gold-gradient-text">FORTRESS</span>
+      </h1>
+
+      <p class="font-serif italic text-xl sm:text-2xl text-stone-400 mb-8 max-w-2xl mx-auto">
+        7 Unwritten Laws of Psychological Defense & Absolute Emotional Mastery.
+      </p>
+
+      <div class="h-px w-24 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent mx-auto mb-8"></div>
+
+      <!-- Introduction Quote Card -->
+      <div class="bg-card/60 backdrop-blur border border-white/10 rounded-2xl p-6 sm:p-8 text-left relative gold-border-glow mb-12">
+        <span class="text-4xl text-gold-500/30 font-serif absolute top-4 left-4">“</span>
+        <blockquote class="font-serif italic text-stone-200 text-lg sm:text-xl pl-6 mb-4 leading-relaxed">
+          When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly... None of them can hurt me, for no one can implicate me in ugliness.
+        </blockquote>
+        <div class="flex items-center justify-between pl-6 text-sm">
+          <span class="text-gold-400 font-semibold tracking-wide">— Marcus Aurelius, Meditations</span>
+          <button onclick="copyQuote(this, 'When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly... None of them can hurt me. — Marcus Aurelius')" class="text-xs text-stone-400 hover:text-white flex items-center gap-1 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            <span>Copy Quote</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-stone-400">
+        <span class="flex items-center gap-1">⏱️ 6-Min Deep Read</span>
+        <span>•</span>
+        <span class="flex items-center gap-1">🛡️ Zero Fluff</span>
+        <span>•</span>
+        <span class="flex items-center gap-1">🏛️ 100% Free Public Guide</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content: The 7 Laws -->
+  <main id="laws" class="max-w-3xl mx-auto px-6 pb-24 space-y-16">
+
+    <!-- Law 1 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 01</span>
+        <span class="text-xs text-stone-500">Core Axiom</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        The Dichotomy of Control
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “You have power over your mind — not outside events. Realize this, and you will find strength.”
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          Most psychological suffering and manipulation stem from caring intensely about things beyond your direct jurisdiction. When you tie your inner peace to another person's reaction, you hand them the remote control to your mind.
+        </p>
+        
+        <div class="grid sm:grid-cols-2 gap-4 mt-6">
+          <div class="p-4 rounded-xl bg-obsidian/70 border border-emerald-500/20">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">Within Your Control</h4>
+            <ul class="text-xs text-stone-300 space-y-1.5 list-disc pl-4">
+              <li>Your decisions & actions</li>
+              <li>Your silence and reactions</li>
+              <li>Your personal boundaries</li>
+              <li>Your internal judgment</li>
+            </ul>
+          </div>
+          <div class="p-4 rounded-xl bg-obsidian/70 border border-rose-500/20">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2">Outside Your Control</h4>
+            <ul class="text-xs text-stone-400 space-y-1.5 list-disc pl-4">
+              <li>Other people's opinions of you</li>
+              <li>Whether people keep their word</li>
+              <li>Past events & future outcomes</li>
+              <li>Other people's emotional moods</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-sm text-stone-400 italic pt-2">
+          <strong>Rule of Engagement:</strong> If an event lands in the second column, it does not deserve an ounce of your anger or anxiety. Treat it as external static.
+        </p>
+      </div>
+    </article>
+
+    <!-- Law 2 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 02</span>
+        <span class="text-xs text-stone-500">Psychological Shield</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        The Art of Strategic Silence
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “He who speaks least commands the room.”
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          Manipulators and toxic personalities depend on triggering your immediate emotional reaction. When attacked, your instinct screams to explain, defend, or counter-attack. Doing so validates their provocation and puts you on the defensive.
+        </p>
+        <div class="p-4 rounded-xl bg-obsidian border border-gold-500/20">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-2">The 4-Second Pause Protocol</h4>
+          <p class="text-sm text-stone-300 leading-normal">
+            When verbally provoked: hold your gaze and say nothing for 4 full seconds. Let the discomfort linger. Then respond with neutral curiosity:
+            <span class="block text-white font-medium mt-1">“Why did you feel the need to say that right now?”</span>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Law 3 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 03</span>
+        <span class="text-xs text-stone-500">Dark Triad Defense</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        Disarming Gaslighting & Guilt
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “Do not let their distortion redefine your reality.”
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          A psychological manipulator will attempt to make you doubt your sanity, memory, or perception (<em>"You're overreacting"</em>, <em>"That never happened"</em>).
+        </p>
+        <p>
+          <strong>The Broken Record Technique:</strong> Never enter an argumentative debate about objective facts with someone committed to distorting them. State your boundary calmly once, and repeat verbatim without raising your pitch:
+        </p>
+        <blockquote class="border-l-2 border-gold-500 pl-4 py-1 text-stone-200 italic">
+          “I remember what happened clearly, and my decision is not up for negotiation.”
+        </blockquote>
+      </div>
+    </article>
+
+    <!-- Law 4 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 04</span>
+        <span class="text-xs text-stone-500">Anticipation Drills</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        Premeditatio Malorum (Negative Visualization)
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “Disaster only breaks those who expect continuous ease.”
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          Stoics deliberately rehearse worst-case scenarios in their imagination before setting foot outside. By visualizing potential betrayals, public embarrassment, and sudden crises, you inoculate your nervous system.
+        </p>
+        <p class="text-sm bg-obsidian p-4 rounded-xl border border-white/5">
+          💡 When the crisis finally strikes, your brain registers it not as an incapacitating shock, but as a known scenario you already prepared for and conquered.
+        </p>
+      </div>
+    </article>
+
+    <!-- Law 5 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 05</span>
+        <span class="text-xs text-stone-500">The Crucible</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        Amor Fati: The Love of Fate
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “The impediment to action advances action. What stands in the way becomes the way.” — Marcus Aurelius
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          Ordinary minds complain about obstacles; the Stoic warrior converts every obstacle into raw fuel. 
+        </p>
+        <ul class="space-y-2 text-sm text-stone-300">
+          <li class="flex items-center gap-2">⚔️ <strong>An unfair insult</strong> is a sparring match for your composure.</li>
+          <li class="flex items-center gap-2">⚔️ <strong>A painful betrayal</strong> is a masterclass in vigilance.</li>
+          <li class="flex items-center gap-2">⚔️ <strong>An adversary</strong> is a mirror exposing your remaining weaknesses.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Law 6 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 06</span>
+        <span class="text-xs text-stone-500">Inviolability</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        Emotional Detachment is Not Apathy
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “Care deeply about your standards, never about external applause.”
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          If an adversary knows what you crave (praise, status, validation), they possess the keys to manipulate you. The moment you need nothing from them, you become impossible to intimidate, bribe, or sway.
+        </p>
+      </div>
+    </article>
+
+    <!-- Law 7 -->
+    <article class="p-8 rounded-2xl bg-surface border border-white/5 hover:border-gold-500/30 transition-all duration-300">
+      <div class="flex items-baseline justify-between mb-4">
+        <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Law 07</span>
+        <span class="text-xs text-stone-500">The Anchor</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+        Discipline as Structural Armor
+      </h2>
+      <p class="font-serif italic text-gold-300/90 text-lg mb-6">
+        “A chaotic routine produces a reactive mind.”
+      </p>
+      <div class="space-y-4 text-stone-300 text-base leading-relaxed">
+        <p>
+          Motivation is emotional and fragile. Ironclad discipline is architectural. When your daily habits and physical routine are immovable, external drama cannot derail your focus.
+        </p>
+      </div>
+    </article>
+
+    <!-- Interactive Protocol Checklist -->
+    <section id="protocol" class="p-8 sm:p-10 rounded-2xl bg-gradient-to-b from-card to-obsidian border border-gold-500/30 gold-border-glow">
+      <div class="text-center mb-8">
+        <span class="text-xs font-bold tracking-widest text-gold-400 uppercase">Daily Execution</span>
+        <h2 class="font-serif text-3xl font-bold text-white mt-1">The 5-Minute Morning Protocol</h2>
+        <p class="text-sm text-stone-400 mt-2">Check off each pillar before touching social media or responding to messages.</p>
+      </div>
+
+      <div class="space-y-3 max-w-xl mx-auto">
+        <label class="flex items-start gap-4 p-4 rounded-xl bg-surface/80 border border-white/5 hover:border-gold-500/30 cursor-pointer transition-colors group">
+          <input type="checkbox" class="mt-1 w-5 h-5 rounded border-stone-600 text-gold-500 focus:ring-gold-500 focus:ring-offset-obsidian bg-obsidian">
+          <div>
+            <div class="font-semibold text-white group-hover:text-gold-300 text-sm">Minute 1: Grounded Stillness</div>
+            <div class="text-xs text-stone-400">Sit upright in silence without touching your phone or notifications.</div>
+          </div>
+        </label>
+
+        <label class="flex items-start gap-4 p-4 rounded-xl bg-surface/80 border border-white/5 hover:border-gold-500/30 cursor-pointer transition-colors group">
+          <input type="checkbox" class="mt-1 w-5 h-5 rounded border-stone-600 text-gold-500 focus:ring-gold-500 focus:ring-offset-obsidian bg-obsidian">
+          <div>
+            <div class="font-semibold text-white group-hover:text-gold-300 text-sm">Minute 2: Dichotomy Audit</div>
+            <div class="text-xs text-stone-400">Identify the hardest challenge today. Discard everything outside your control.</div>
+          </div>
+        </label>
+
+        <label class="flex items-start gap-4 p-4 rounded-xl bg-surface/80 border border-white/5 hover:border-gold-500/30 cursor-pointer transition-colors group">
+          <input type="checkbox" class="mt-1 w-5 h-5 rounded border-stone-600 text-gold-500 focus:ring-gold-500 focus:ring-offset-obsidian bg-obsidian">
+          <div>
+            <div class="font-semibold text-white group-hover:text-gold-300 text-sm">Minute 3: Adversity Rehearsal</div>
+            <div class="text-xs text-stone-400">Visualize one difficult person trying to provoke you. See yourself reacting with cold calm.</div>
+          </div>
+        </label>
+
+        <label class="flex items-start gap-4 p-4 rounded-xl bg-surface/80 border border-white/5 hover:border-gold-500/30 cursor-pointer transition-colors group">
+          <input type="checkbox" class="mt-1 w-5 h-5 rounded border-stone-600 text-gold-500 focus:ring-gold-500 focus:ring-offset-obsidian bg-obsidian">
+          <div>
+            <div class="font-semibold text-white group-hover:text-gold-300 text-sm">Minute 4: Law of Silence Commitment</div>
+            <div class="text-xs text-stone-400">Commit to speaking 30% less today. Listen actively, observe micro-expressions.</div>
+          </div>
+        </label>
+
+        <label class="flex items-start gap-4 p-4 rounded-xl bg-surface/80 border border-white/5 hover:border-gold-500/30 cursor-pointer transition-colors group">
+          <input type="checkbox" class="mt-1 w-5 h-5 rounded border-stone-600 text-gold-500 focus:ring-gold-500 focus:ring-offset-obsidian bg-obsidian">
+          <div>
+            <div class="font-semibold text-white group-hover:text-gold-300 text-sm">Minute 5: Inner Declaration</div>
+            <div class="text-xs text-stone-400">“I am the master of my reactions. Nothing enters my fortress without my consent.”</div>
+          </div>
+        </label>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-surface/50 py-12 px-6">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-stone-400">
+      <div class="flex items-center gap-3">
+        <span class="text-lg">🏛️</span>
+        <div>
+          <span class="font-serif font-bold text-white tracking-widest text-sm block">STOIC SHADOW</span>
+          <span>Official Psychological Mastery Manual</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:items-end gap-1">
+        <div>Business & Sponsorships: <a href="mailto:baonambussiness2@gmail.com" class="text-gold-400 hover:underline font-medium">baonambussiness2@gmail.com</a></div>
+        <div>Follow on YouTube: <span class="text-stone-300 font-semibold">@StoicShadowHQ</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-gold-600 text-obsidian font-semibold text-xs px-4 py-2.5 rounded-full shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none">
+    Quote copied to clipboard
+  </div>
+
+  <script>
+    // Reading Progress Bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progressBar').style.width = scrolled + '%';
+    });
+
+    // Copy Quote Function
+    function copyQuote(btn, text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('toast');
+        toast.style.opacity = '1';
+        setTimeout(() => {
+          toast.style.opacity = '0';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
